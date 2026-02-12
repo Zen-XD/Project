@@ -4,11 +4,13 @@ import { FaFacebook, FaTiktok, FaInstagram } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <nav className="flex items-center py-4 px-39 justify-between shadow-2xl">
-      <div className="flex items-center gap-16">
-        <div className="flex items-center gap-2 py-4">
-          <img src="/images/logo.png" alt="logo" className="w-8 h-8" />
-          <h2 className="text-[#0C6967] font-bold text-[25px]">momos</h2>
+    <nav className="flex items-center py-4 px-39 justify-between shadow-md h-20">
+      <div className="flex items-center gap-2">
+        <div className="flex justify-items-start items-center gap-2 w-42 py-4 ">
+          <NavLink to="./" className="flex gap-2 justify-center items-center h-8">
+            <img src="/images/logo.png" alt="logo" className="w-8 h-full" />
+            <h5 className="text-[#0C6967] font-bold text-[25px] pb-1">momos</h5>
+          </NavLink>
         </div>
 
         <div className="flex gap-2 text-[#6B788E] font-medium">
@@ -27,15 +29,15 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="flex items-center gap-2">
-        <div className="flex gap-4">
+      <div className="flex justify-end items-center gap-8 h-12 w-90">
+        <div className="flex gap-4 h-8">
           <FaFacebook size={32} className="text-[#A6AEBB]" />
-          <FaTiktok size={32} />
-          <FaInstagram size={32} />
+          <FaTiktok size={32} className="bg-[#A6AEBB] text-white p-1.5 rounded-full" />
+          <FaInstagram size={32} className="bg-[#A6AEBB] text-white p-1.5 rounded-full" />
         </div>
         <NavLink
           to="./contact"
-          className="bg-[#D95103] py-3 px-5.5 text-white rounded-[100px]"
+          className="bg-[#D95103] py-3 px-5.5 text-white font-[14px] rounded-[100px] h-10.25 flex items-center"
         >
           Contact Us
         </NavLink>
