@@ -4,7 +4,7 @@ import { FaFacebook, FaTiktok, FaInstagram } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <nav className="flex items-center py-4 px-39 justify-between shadow-md h-20">
+    <nav className="flex items-center py-4 px-39 justify-between shadow-md h-20 fixed w-full z-999 bg-white">
       <div className="flex items-center gap-2">
         <div className="flex justify-items-start items-center gap-2 w-42 py-4 ">
           <NavLink to="./" className="flex gap-2 justify-center items-center h-8">
