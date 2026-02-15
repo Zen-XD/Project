@@ -7,7 +7,10 @@ const Navbar = () => {
     <nav className="flex items-center py-4 px-39 justify-between shadow-md h-20 fixed w-full z-999 bg-white">
       <div className="flex items-center gap-2">
         <div className="flex justify-items-start items-center gap-2 w-42 py-4 ">
-          <NavLink to="./" className="flex gap-2 justify-center items-center h-8">
+          <NavLink
+            to="./"
+            className="flex gap-2 justify-center items-center h-8"
+          >
             <img src="/images/logo.png" alt="logo" className="w-8 h-full" />
             <h5 className="text-[#0C6967] font-bold text-[25px] pb-1">momos</h5>
           </NavLink>
@@ -32,8 +35,14 @@ const Navbar = () => {
       <div className="flex justify-end items-center gap-8 h-12 w-90">
         <div className="flex gap-4 h-8">
           <FaFacebook size={32} className="text-[#A6AEBB]" />
-          <FaTiktok size={32} className="bg-[#A6AEBB] text-white p-1.5 rounded-full" />
-          <FaInstagram size={32} className="bg-[#A6AEBB] text-white p-1.5 rounded-full" />
+          <FaTiktok
+            size={32}
+            className="bg-[#A6AEBB] text-white p-1.5 rounded-full"
+          />
+          <FaInstagram
+            size={32}
+            className="bg-[#A6AEBB] text-white p-1.5 rounded-full"
+          />
         </div>
         <NavLink
           to="./contact"
