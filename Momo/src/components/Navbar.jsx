@@ -9,7 +9,7 @@ const Navbar = () => {
         <div className="flex justify-items-start items-center gap-2 w-42 py-4 ">
           <NavLink
             to="./"
-            className="flex gap-2 justify-center items-center h-8"
+            className="flex gap-2 justify-center items-center h-8 hover:cursor-pointer"
           >
             <img src="/images/logo.png" alt="logo" className="w-8 h-full" />
             <h5 className="text-[#0C6967] font-bold text-[25px] pb-1">momos</h5>

@@ -8,6 +8,7 @@ import Menu from "../pages/Menu";
 import AllergyAdvice from "../pages/AllergyAdvice";
 import PublicLayout from "../layout/PublicLayout";
 import NotFound from "../pages/NotFound";
+import ProductDetails from "../pages/ProductDetails";
 
 const AppRoutes = () => {
   return (
@@ -20,6 +21,7 @@ const AppRoutes = () => {
           <Route path="/services" element={<Service />} />
           <Route path="/menu" element={<Menu />} />
           <Route path="/allergy-advice" element={<AllergyAdvice />} />
+          <Route path="/product-details/:id" element={<ProductDetails />} />
           <Route path="/*" element={<NotFound />} />
         </Route>
       </Routes>
