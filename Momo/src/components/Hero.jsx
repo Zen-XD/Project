@@ -80,10 +80,10 @@ const Hero = () => {
           </p>
         </div>
 
-        <div className="flex justify-center items-center py-54 px-104.75 w-full h-auto bg-[url(/images/chef.png)] bg-cover">
+        <div className="flex justify-center items-center py-54 w-full h-auto bg-[url(/images/chef.png)] bg-cover bg-center bg-black/50 bg-blend-darken">
           <div className="flex flex-col justify-center items-center gap-12">
             <div className="flex flex-col justify-center gap-2 items-center">
-              <p className="text-[49px] text-white font-bold leading-1.2">
+              <p className="text-[49px] text-white font-bold leading-1.2 w-full">
                 Process behind the making
               </p>
               <p className="text-[25px] text-white leading-1.2">
@@ -173,8 +173,8 @@ const Hero = () => {
           </p>
         </div>
 
-        <div className="flex justify-center items-center gap-10">
-          <div className="flex flex-col justify-center items-start bg-[#0C6967] text-white text-[20px] p-8 gap-10 rounded-xl w-116">
+        <div className="flex justify-center items-stretch gap-10 rounded-2xl p-5 h-fit shadow-[0_0_10px_rgba(0,0,0,0.2)]">
+          <div className="flex flex-col items-start bg-[#0C6967] text-white text-[20px] p-8 gap-10 rounded-xl w-116">
             <div className="flex flex-col gap-6">
               <p className="flex justify-items-start items-center gap-2 text-[20px] font-semibold">
                 <FaLocationDot size={24} /> Our Address
@@ -229,7 +229,7 @@ const Hero = () => {
             </div>
           </div>
 
-          <form className="flex flex-col justify-center items-center gap-12 px-6 py-10 w-146.75">
+          <form className="flex flex-col justify-center items-start gap-12 px-6 py-10 w-146.75">
             <div className="flex gap-2 w-full">
               <div className="flex flex-col grow gap-2">
                 <label htmlFor="">First Name</label>
@@ -279,13 +279,13 @@ const Hero = () => {
                 </select>
               </div>
             </div>
-            <div className="flex w-full">
-              <div>
-                <label htmlFor="">Message</label>
+
+            <div className="flex flex-col w-full">
+              <label htmlFor="">Message</label>
+              <div className="flex">
                 <div className="flex justify-center items-center h-14 border border-[#DFE2E6] p-4 rounded-l-md">
-                  <label htmlFor="">
-                    <img src="/images/npflag.png" alt="" />
-                  </label>
+                  <img src="/images/npflag.png" alt="" />
+
                   <select
                     name="none"
                     id="none"
@@ -300,26 +300,35 @@ const Hero = () => {
                     <option value="kir">+868</option>
                   </select>
                 </div>
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  className="h-14 border border-[#DFE2E6] rounded-r-md grow"
+                />
               </div>
-              <input
-                type="text"
-                name=""
-                id=""
-                className="h-14 border border-[#DFE2E6] rounded-r-md grow"
-              />
             </div>
-            <div>
+
+            <div className="w-full">
               <div className="flex flex-col grow gap-2">
                 <label htmlFor="">Message</label>
                 <input
                   type="text"
-                  name="lname"
-                  id="lname"
-                  className="h-14 border border-[#DFE2E6] rounded-md"
+                  name="msg"
+                  id="msg"
+                  className="h-41.25 border border-[#DFE2E6] rounded-md w-full"
                 />
               </div>
             </div>
-            <div></div>
+
+            <div>
+              <button
+                type="submit"
+                className="bg-[#D95103] py-5 px-18 text-white font-[14px] rounded-[100px] flex items-center"
+              >
+                Send Message
+              </button>
+            </div>
           </form>
         </div>
       </div>
