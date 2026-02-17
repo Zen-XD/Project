@@ -29,6 +29,9 @@ const Navbar = () => {
           <NavLink className="py-2 px-3" to="./allergy-advice">
             Allergy Advice
           </NavLink>
+          <NavLink className="py-2 px-3" to="./cart">
+            Cart
+          </NavLink>
         </div>
       </div>
 

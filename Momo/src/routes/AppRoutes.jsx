@@ -9,6 +9,7 @@ import AllergyAdvice from "../pages/AllergyAdvice";
 import PublicLayout from "../layout/PublicLayout";
 import NotFound from "../pages/NotFound";
 import ProductDetails from "../pages/ProductDetails";
+import Cart from "../pages/Cart";
 
 const AppRoutes = () => {
   return (
@@ -20,6 +21,7 @@ const AppRoutes = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/services" element={<Service />} />
           <Route path="/menu" element={<Menu />} />
+          <Route path="/cart" element={<Cart />} />
           <Route path="/allergy-advice" element={<AllergyAdvice />} />
           <Route path="/product-details/:id" element={<ProductDetails />} />
           <Route path="/*" element={<NotFound />} />
