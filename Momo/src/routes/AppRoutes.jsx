@@ -10,6 +10,9 @@ import PublicLayout from "../layout/PublicLayout";
 import NotFound from "../pages/NotFound";
 import ProductDetails from "../pages/ProductDetails";
 import Cart from "../pages/Cart";
+import Payment from "../pages/payment/Payment";
+import Success from "../pages/payment/Success";
+import Failure from "../pages/payment/Failure";
 
 const AppRoutes = () => {
   return (
@@ -22,6 +25,9 @@ const AppRoutes = () => {
           <Route path="/services" element={<Service />} />
           <Route path="/menu" element={<Menu />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/payment" element={<Payment />} />
+          <Route path="/success" element={<Success />} />
+          <Route path="/failure" element={<Failure />} />
           <Route path="/allergy-advice" element={<AllergyAdvice />} />
           <Route path="/product-details/:id" element={<ProductDetails />} />
           <Route path="/*" element={<NotFound />} />
