@@ -18,7 +18,7 @@ const Success = () => {
   const res = JSON.parse(atob(encoded));
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 to-green-100 flex items-center justify-center px-4">
+    <div className="min-h-screen bg-linear-to-br from-green-50 to-green-100 flex items-center justify-center px-4">
       <div className="bg-white shadow-2xl rounded-3xl p-8 w-full max-w-md text-center">
         {/* Success Icon */}
         <div className="w-20 h-20 mx-auto mb-4 flex items-center justify-center rounded-full bg-green-100">
