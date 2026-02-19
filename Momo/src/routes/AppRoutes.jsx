@@ -13,6 +13,9 @@ import Cart from "../pages/Cart";
 import Payment from "../pages/payment/Payment";
 import Success from "../pages/payment/Success";
 import Failure from "../pages/payment/Failure";
+import Login from "../pages/auth/Login";
+import Profile from "../pages/auth/Profile";
+import ProtectedRoutes from "../components/ProtectedRoutes";
 
 const AppRoutes = () => {
   return (
@@ -20,10 +23,19 @@ const AppRoutes = () => {
       <Routes>
         <Route element={<PublicLayout />}>
           <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/profile" element={<Profile />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/services" element={<Service />} />
-          <Route path="/menu" element={<Menu />} />
+          <Route
+            path="/menu"
+            element={
+              <ProtectedRoutes>
+                <Menu />
+              </ProtectedRoutes>
+            }
+          />
           <Route path="/cart" element={<Cart />} />
           <Route path="/payment" element={<Payment />} />
           <Route path="/success" element={<Success />} />
